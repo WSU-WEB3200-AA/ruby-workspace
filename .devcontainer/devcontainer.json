@@ -1,0 +1,19 @@
+{
+  "name": "RoR",
+  "image": "ghcr.io/rails/devcontainer/images/ruby:3.3.0",
+  "onCreateCommand": "echo 'gem: --no-document' >> ~/.gemrc && sudo apt update && sudo apt -y install sqlite3 nodejs npm && sudo npm -g install yarn && gem install rails foreman",
+  "postCreateCommand": "ruby -v && rails -v",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "emmet.includeLanguages": {
+          "erb": "html"
+        },
+        "files.autoSave": "afterDelay",
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on"
+      },
+      "extensions": []
+    }
+  }
+}
