@@ -1,7 +1,7 @@
 {
-  "name": "RoR",
+  "name": "RoR Workspace",
   "image": "ghcr.io/rails/devcontainer/images/ruby:3.3.0",
-  "onCreateCommand": "echo 'gem: --no-document' >> ~/.gemrc && sudo apt update && sudo apt -y install sqlite3 nodejs npm && sudo npm -g install yarn && gem install rails foreman",
+  "onCreateCommand": "echo 'gem: --no-document' >> ~/.gemrc && sudo apt update && sudo apt -y install sqlite3 && curl -fsSL https://bun.sh/install | bash && gem install rails foreman",
   "postCreateCommand": "ruby -v && rails -v",
   "customizations": {
     "vscode": {
