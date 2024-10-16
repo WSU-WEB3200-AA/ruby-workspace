@@ -30,22 +30,24 @@ out
 
 # Ignore bundler config.
 
-/.bundle
+.bundle
 
 # Ignore all environment files (except templates).
 /.env*
 !/.env*.erb
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
+log
+tmp
 
 # Ignore storage (uploaded files in development and any SQLite databases).
-/storage/*
+storage
 
-/public/assets
+public/assets
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+config/master.key
 
-/ruby-lsp/*
+ruby-lsp
+
+node_modules
